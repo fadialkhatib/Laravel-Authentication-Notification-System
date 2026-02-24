@@ -56,7 +56,7 @@ A complete, production‑ready authentication backend built with **Laravel**, fe
 | Queue | Redis / Database Queue |
 | Real‑Time | Pusher / Laravel WebSockets |
 | Push Notifications | Firebase Cloud Messaging (FCM) |
-| Database | MySQL / MariaDB |
+| Database | MySQL  |
 | Mail | SMTP (Gmail recommended) |
 
 ---
@@ -98,9 +98,9 @@ composer require pusher/pusher-php-server
 
 
 👤 Developer
-Name: Fadi
-Email: your-email@example.com
-LinkedIn: https://www.linkedin.com/in/your-profile (linkedin.com in Bing)
+Name: Fadi Alkhatib
+Email: fadialkhatibfb@gmail.com
+
 
 
 ## 📦 Installation
