@@ -61,40 +61,6 @@ A complete, production‑ready authentication backend built with **Laravel**, fe
 
 ---
 
-## 📦 Installation
-
-Clone the project:
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-Install dependencies:
-composer install
-npm install
-
-
-Create environment file:
-cp .env.example .env
-
-
-Generate app key:
-php artisan key:generate
-
-
-Run migrations:
-php artisan migrate
-
-
-
-Start queue worker:
-php artisan queue:work
-
-
-Run the server:
-php artisan serve
-
-
-
 🔥 Firebase Setup (Push Notifications)
 - Go to Firebase Console
 - Create a project
@@ -136,4 +102,36 @@ Name: Fadi
 Email: your-email@example.com
 LinkedIn: https://www.linkedin.com/in/your-profile (linkedin.com in Bing)
 
+
+## 📦 Installation
+
+Clone the project:
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+Install dependencies:
+composer install
+npm install
+
+
+Create environment file:
+cp .env.example .env
+
+
+Generate app key:
+php artisan key:generate
+
+
+Run migrations:
+php artisan migrate
+
+
+
+Start queue worker:
+php artisan queue:work
+
+
+Run the server:
+php artisan serve
 
