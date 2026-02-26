@@ -51,7 +51,7 @@ A complete, production‑ready authentication backend built with **Laravel**, fe
 
 | Layer | Technology |
 |-------|------------|
-| Backend | Laravel 10 |
+| Backend | Laravel 12 |
 | Auth | Laravel Sanctum |
 | Queue | Redis / Database Queue |
 | Real‑Time | Pusher / Laravel WebSockets |
