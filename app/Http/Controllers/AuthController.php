@@ -15,6 +15,10 @@ use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
+
+    /*
+    Register a new user, send a welcome email with a verification token, and return a success message.
+    */
     public function Register(Request $request)
     {
         $validate = $request->validate([
@@ -37,6 +41,9 @@ class AuthController extends Controller
         ], 201);
     }
 
+    /*
+    Login a user and return an access token.
+    */
     public function Login(Request $request)
     {
         try {
@@ -72,7 +79,9 @@ class AuthController extends Controller
         return $response;
     }
 
-
+    /*
+    Logout a user and delete their access token.
+    */
     public function Logout(Request $request)
     {
         $request->user()->currentAccessToken()->delete();
@@ -81,6 +90,9 @@ class AuthController extends Controller
     }
 
 
+    /*
+    Verify a user's email address using a verification token.
+     */
     public function verifyEmail(Request $request)
     {
         $user = auth()->user();
@@ -102,6 +114,10 @@ class AuthController extends Controller
 
         return response()->json(['message' => 'Email verified successfully']);
     }
+
+    /*
+    Handle a forgot password request by validating the email, generating a reset token, saving it to the database, and sending a reset link via email.
+    */
     public function forgotPassword(Request $request)
     {
         $validate = $request->validate([
@@ -131,6 +147,9 @@ class AuthController extends Controller
         ]);
     }
 
+    /*
+    Reset a user's password using a reset token.
+     */
     public function resetPassword(Request $request)
     {
         $request->validate([
@@ -161,7 +180,9 @@ class AuthController extends Controller
         return response()->json(['message' => 'Password updated successfully']);
     }
 
-
+    /*
+    Save a device token for the authenticated user to enable push notifications.
+    */
     public function saveDeviceToken(Request $request)
     {
         $request->validate([
@@ -175,7 +196,9 @@ class AuthController extends Controller
         return response()->json(['message' => 'Device token saved']);
     }
 
-
+    /*
+    Send a push notification to a user's device using Firebase Cloud Messaging (FCM) with the provided title and body.
+    */
     public function sendPushNotification($user, $title, $body)
     {
         $token = $user->device_token;

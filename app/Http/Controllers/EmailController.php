@@ -7,6 +7,9 @@ use App\Jobs\SendWelcomeEmail;
 
 class EmailController extends Controller
 {
+    /*
+     * Send a welcome email to a user.
+     */
     public function send(Request $request)
     {
         $request->validate([
