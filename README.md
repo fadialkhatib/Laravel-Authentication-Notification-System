@@ -11,7 +11,7 @@ A complete, production‑ready authentication backend built with **Laravel**, fe
 - 📝 Activity Logging System  
 - ❗ Failed Jobs Dashboard  
 - 🧩 Clean, modular, scalable architecture  
-
+- 📝 API Documentation http://localhost:8000/docs
 ---
 
 ## 🚀 Features
